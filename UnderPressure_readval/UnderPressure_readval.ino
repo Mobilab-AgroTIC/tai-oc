@@ -58,6 +58,7 @@ void loop()
   // Affichage des résultats
   Serial.print("Mediane: ");
   Serial.println(mediane);
+  
   //Serial.print("Moyenne sans outliers: ");
   //Serial.println(moyenneFiltree);
 
