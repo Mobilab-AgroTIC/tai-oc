@@ -1,6 +1,4 @@
 #include "Arduino.h"
-#include <algorithm>
-
 
 // pin connexions
 #define PIN_TRANSISTOR GPIO2
@@ -9,8 +7,6 @@
 
 // variables for sensor
 int val;
-float pressure, voltage;
-int calib = 557;
 
 ///////////////////////////////////////////////////
 void setup() {

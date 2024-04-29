@@ -47,6 +47,7 @@ void loop()
   // Calcul de la médiane et de la moyenne
   int mediane = calculerMedian();
   float moyenneFiltree = calculerMoyenneSansOutliers();
+  
   /*
   Serial.println("Valeurs du tableau :");
   for (int i = 0; i < n; i++) {
@@ -56,11 +57,7 @@ void loop()
   Serial.println();*/
   
   // Affichage des résultats
-  Serial.print("Mediane: ");
-  Serial.println(mediane);
-  
-  //Serial.print("Moyenne sans outliers: ");
-  //Serial.println(moyenneFiltree);
+
 
   // Réinitialisation pour la prochaine série de mesures
   ind = 0;
@@ -68,15 +65,16 @@ void loop()
   voltage = mediane*2.400/4096.000;
   pressure = ((mediane-calib)*2.400/4096.000)*4+1;
 
-  Serial.print("Val :");
-  Serial.println(val);
+  Serial.print("Val mediane :");
+  Serial.print(mediane);
+  Serial.print(" , ");
+
   Serial.print("voltage :");
-  Serial.println(voltage,3); 
+  Serial.print(voltage,3); 
+  Serial.print(" , ");
+
   Serial.print("pressure :");
   Serial.println(pressure,3);
-
-
-
 }
 
 // Fonction pour calculer la médiane
