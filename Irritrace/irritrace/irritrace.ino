@@ -26,7 +26,7 @@ uint8_t downlink ;
 
 
 // variables for sensor
-int val, prescbar
+int val, prescbar;
 float pressure, voltage;
 
 //Some utilities for going into low power mode
