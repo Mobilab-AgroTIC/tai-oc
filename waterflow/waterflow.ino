@@ -92,7 +92,7 @@ void loop()
   waterFlow.clearVolume();
   int debit = waterFlow.getFlowRateOfMinute()*100;
     Serial.print(debit);
-    Serial.print(" L/m   ");
+    Serial.println(" L/m   ");
 
   beforeTime = millis();
 
@@ -102,11 +102,12 @@ void loop()
   waterFlow2.clearVolume();
   int debit2 = waterFlow2.getFlowRateOfMinute()*100;
     Serial.print(debit2);
-    Serial.print(" L/m   ");
+    Serial.println(" L/m   ");
  
   digitalWrite(GPIO7,LOW);
+  
   Serial.printf("\ndebit : %d\n", debit);
-  Serial.printf("\ndebit2 : %d\n", debit);
+  Serial.printf("\ndebit2 : %d\n", debit2);
 
   Serial.printf("\nVoltage : %d\n", voltage);
   lora_data[0] = voltage;
