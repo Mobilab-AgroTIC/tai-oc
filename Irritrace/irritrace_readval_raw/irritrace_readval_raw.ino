@@ -1,7 +1,7 @@
 #include "Arduino.h"
 
 // pin connexions
-#define PIN_TRANSISTOR GPIO2
+#define PIN_TRANSISTOR GPIO7
 #define PIN_PRESSURE ADC2
 
 
