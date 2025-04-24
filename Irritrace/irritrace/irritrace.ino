@@ -12,7 +12,7 @@ int calib = 557;
 
 // pin connexions
 #define PIN_TRANSISTOR GPIO2
-#define PIN_PRESSURE GPIO1
+#define PIN_PRESSURE ADC2
 
 
 int temps = 180; // Frequency to wake up the system, in seconds (DO NOT GO UNDER 300, 5min. Remember of the fair use policy)
